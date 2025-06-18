@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.yourcompany.yourproject</groupId>
+    <artifactId>novo6</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>22</maven.compiler.release>
+        <exec.mainClass>org.yourcompany.yourproject.Novo6</exec.mainClass>
+
+       <itext.pdfhtml.version>6.1.0</itext.pdfhtml.version>
+       <itext.version>9.1.0</itext.version>
+
+    </properties>
+
+<dependencies>
+  <dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>html2pdf</artifactId>
+    <version>${itext.pdfhtml.version}</version>
+  </dependency>
+  
+  <!-- optional dependency if you intend on creating PDF/UA documents -->
+  <dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>pdfua</artifactId>
+    <version>${itext.version}</version>
+  </dependency>
+
+
+  <!-- Spring Boot para API REST -->
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>3.1.0</version>
+  </dependency>
+
+  <!-- Manipulação de JSON -->
+  <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.15.0</version>
+  </dependency>
+
+</dependencies>
+
+
+    <!-- All add-ons and iText Core-->
+    <repositories>
+    <repository>
+        <id>itext</id>
+        <name>iText Repository - releases</name>
+        <url>https://repo.itextsupport.com/releases</url>
+    </repository>
+    </repositories>
+</project>
