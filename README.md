@@ -6,6 +6,7 @@ O código tem como objetivo atuar como gerador de PDF apartir de um código HTML
 
 No arquivo pom.xml, deve ser adicionado:
 
+```
 <properties>
     <itext.pdfhtml.version>6.1.0</itext.pdfhtml.version>
     <itext.version>9.1.0</itext.version>
@@ -29,9 +30,10 @@ No arquivo pom.xml, deve ser adicionado:
         <url>https://repo.itextsupport.com/releases</url>
     <repository>
 </repository>
+```
 
 Obs.: Apesar de estarem no projeto, elas ainda não foram usadas.
-
+```
 <dependencies>
   <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -44,3 +46,4 @@ Obs.: Apesar de estarem no projeto, elas ainda não foram usadas.
       <version>2.15.0</version>
   </dependency>
 </dependencies>
+```
